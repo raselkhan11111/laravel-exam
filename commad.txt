@@ -1,0 +1,55 @@
+ "creating table
+....
+php artisan make:migration create_products_table
+
+"
+
+
+"for alter table.or create new column in existing table
+....
+
+php artisan make:migration add_brand_to_categories_table --table="categories"
+
+php artisan make:migration add_time_to_color_info_table --table="color_info"
+
+"
+$table->id();
+            $table->string('name');
+            $table->string('price');
+            $table->string('picture');
+            $table->string('product_category'
+
+laravel breeze:
+
+php artisan tinker  run tinker in cmd
+
+composer require laravel/breeze --dev
+php artisan breeze:install
+
+image -package= """
+https://image.intervention.io/v2/introduction/installation#integration-in-laravel
+composer require intervention/image
+
+""""
+
+php artisan migrate:rollback
+php artisan make:model category
+php artisan make:model Blog -m      ..with migration table
+php artisan make:model Blog -mcr    ..with migration table,controller and resource controller
+php artisan make:factory BlogFactory
+php artisan make:seeder BlogSeeder
+php artisan migrate:refresh --path="database/migrations/2022_10_03_043323_create_products_table.php"
+ php artisan make:request ProductRequest
+
+
+soft delete at table"
+
+php artisan make:migration add_deleted_at_column_to_products --table=products   "
+
+php artisan make:controller PhotoController --resource
+https://carbon.nesbot.com/docs/
+seeder....
+php artisan make:seeder categorySeedeer
+php artisan db:seed
+php artisan db:seed --class=categorySeeder
+php artisan migrate:fresh --seed
